@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Vazir";
+    -webkit-tap-highlight-color: transparent;
+}
+
+#card:hover figcaption {
+    @apply scale-100;
+}
+#card:hover #overlay {
+    @apply block;
+}
