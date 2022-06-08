@@ -8,6 +8,7 @@ import Users from '../../Pages/Users/Users';
 import CommentPosts from '../../Pages/Posts/CommentPosts';
 import Gallery from '../../Pages/Gallery/Gallery';
 import Home from '../../Pages/Home/Home';
+import NotFound from '../../Pages/NotFound/NotFound';
 
 const Content = () => {
     const { showSidebar, setShowSidebar, setShowDrowdown } = useContext(MainContext);
@@ -30,6 +31,7 @@ const Content = () => {
                         <Route path=":postId" />
                     </Route>
                     <Route path="/gallery" element={<Gallery />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
         </>

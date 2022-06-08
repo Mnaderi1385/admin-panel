@@ -60,6 +60,8 @@ const App = () => {
             });
             setIsConnect(true);
         });
+
+        
     }, []);
 
     return (
